@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch frame</title>
+</head>
+<body>
+    <div>
+    <style>
+        .button {
+          border: none;
+          color: rgb(2, 0, 0);
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        .button1 {background-color: #d8fdfd;} /* Green */
+        .button2 {background-color: #e0cee4;} /* Blue */
+    </style>
+    
+        <h1>The button to change setting</h1> 
+        <button class="button button1">Addition</button>
+        <button class="button button2">Subtraction</button>
+    </div>
+
+        <div id="picture">
+            <p>Image to use:</p>
+            <img id="scream" src="pic_the_scream.jpg" alt="The Scream" width="220" height="277"/>
+            
+            <p>Canvas to fill:</p>
+            <canvas id="myCanvas" width="250" height="300"
+            style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+            
+            <p><button onclick="myCanvas()">Try it</button></p>
+        </div>
+
+            <script>
+            function myCanvas() {
+              var c = document.getElementById("myCanvas");
+              var ctx = c.getContext("2d");
+              var img = document.getElementById("scream");
+              ctx.drawImage(img,10,10);
+            }
+            </script>
+        
+
+<div>
+<canvas id="myCanvas1" width="600" height="600"
+style="border:1px solid #c3c3c3;">
+</canvas>
+</div>
+
+<script>
+var canvas = document.getElementById("myCanvas1");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0,0,150,75);
+</script>
+
+        
+    
+</body>
+</html>
