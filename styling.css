@@ -1,7 +1,7 @@
 .button {
   border: none;
   color: rgb(2, 0, 0);
-  padding: 15px 32px;
+  padding: 15px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -9,8 +9,7 @@
   margin: 0 auto;
   cursor: pointer;
   position: relative;
-  font-family: cursive;
-  background: linear-gradient(45deg, rgba(13,25,147,0.8449754901960784) 0%, rgba(253,29,29,0.758140756302521) 81%, rgba(252,176,69,0.8533788515406162) 100%);
+  background: black;
 }
 
 input[type="text"] {
@@ -52,7 +51,7 @@ textarea {
 }
 #arena{
     float: right;
-    width: 700px;
+    width: 450px;
   }
 
 br{
@@ -66,11 +65,11 @@ body{
 }
 
 #display{
-	border:2px solid black;
+    font-weight: bold;
 	padding:10px 40px; 
 	width:300px;
-    border-radius:25px;
-    background: rgb(2,0,36);
-    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,0.7525385154061625) 100%);
+    border-radius:15px;
+    margin:0px;
+    background: black
     color: whitesmoke;
 }
